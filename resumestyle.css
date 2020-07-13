@@ -2,14 +2,14 @@ body
 {
 	margin:0px;
 	padding:0px;
-	width:100%;
+   width:100%;
 }
 .menu
 {
 	width:100%;
 	margin:0px;
 	padding:0px;
-	
+	position:fixed;
 }
 .menu nav{
 	width:100%;
@@ -35,23 +35,34 @@ body
 	padding-right:4px;
 	color:white;
 }
+.menu nav ul li a
+{
+	color:white;
+	text-decoration:none;
+}
 .home
 {
 	background-color:#43bee5;
-	height:500px;
+	height:600px;
 	margin:0;
+	width:100%;
 }
-
+.home .content .text{
+	font-size:40px;
+}
+.skilltop{
+	padding-top:50px;
+}
 .home .content 
 {
 	text-align:center;
-	padding-top:15px;
+	padding-top:85px;
 	
 }
 .home .content .profile i
 {
   
- font-size:90px;
+ font-size:150px;
  margin-bottom:20px;
 }
 .about
@@ -64,6 +75,7 @@ body
 	background-image:url('https://tse2.mm.bing.net/th?id=OIP.BjyNQ7u260uvF8eyyZho1gHaE8&pid=Api&P=0&w=266&h=178');
 	width:100%;
 	height:600px;
+	width:100%;
 	background-repeat:no-repeat;
 	background-size:cover;
 	padding-top:10px;
@@ -71,9 +83,20 @@ body
 
 	
 }
-.about .inner
+.about .inner{
+	padding-top:50px;
+}
+.about .inner p{
+	
+	margin-left:20px;
+}
+	
+
+.about .inner .abouttext
 {
-	padding-left:20px;
+	padding-left:10px;
+	font-size:40px;
+	
 }
 .education
 {
@@ -82,14 +105,17 @@ body
 }
 .education .head
 {
-	font-size:30px;
+	font-size:40px;
 	margin-left:10px;
+	padding-top:50px;
 }
 .education .educationblock div{
 	float:left;
-	padding-left:20px;
-	padding-right:20px;
-	margin-bottom:10px;
+	padding-left:40px;
+  padding-right:40px;
+  margin-bottom:10px;
+  margin-top:30px;
+	text-align:center;
 }
 .education .educationblock div i{
 	font-size:80px;
@@ -98,37 +124,49 @@ body
 {
 	background-color:#41b853;
 	height:600px;
+	width:100%;
 }
 .hobbies
 {
 	background-color:#00adb5;
 	height:600px;
-	
+	width:100%;
 }
+
 .hobbies .head
 {
-	font-size:30px;
+	font-size:40px;
 	margin-left:10px;
+	padding-top:50px;
+	
 }
 .hobbies .hobbieblock div{
 	float:left;
-	padding-left:20px;
-	padding-right:20px;
-	margin-bottom:10px;
+	padding-left:40px;
+  padding-right:40px;
+  margin-bottom:10px;
+  margin-top:30px;
+	
+	
+	text-align:center;
+	
 }
 .hobbies .hobbieblock div i{
 	font-size:80px;
+	
 }
 .contact
 {
 	background-color:#eeeeee;
 	height:600px;
 	text-align:center;
+	width:100%;
 }
 .contact .size
 {
 	
-	font-size:30px;
+	font-size:40px;
+	padding-top:50px;
 }
 .skills div{
 	margin-left:20px;
@@ -139,15 +177,17 @@ body
   float:left;
   font-size:25px;
   padding-left:40px;
-  padding-right:40px;
+  padding-right:30px;
   margin-bottom:10px;
+  margin-top:30px;
 }
-@media only screen and (max-width:485px)
+@media only screen and (max-width:555px)
 {
-	.skills .skillblock div ,.hobbies .hobbieblock div , .education .educationblock div
-{
-  width:100%;
-  
-  
-}
+	.education .educationblock ,.hobbies .hobbieblock ,.skills .skillblock
+	{
+		display:grid;
+		grid-template-rows:1fr 1fr 1fr;
+	}
+	
+
 }
